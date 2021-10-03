@@ -26,3 +26,12 @@ jobs:
     - name: End
       run: |
             ls -l
+            
+    - name: Upload result for job
+      uses: actions/upload-artifact@v1
+      with:
+
+          name: Build
+
+          path: build
+        #By:FlyKO
