@@ -23,3 +23,6 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build --scan
+    - name: End
+      run: |
+            ls -l
