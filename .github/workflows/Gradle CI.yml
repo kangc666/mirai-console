@@ -25,13 +25,15 @@ jobs:
       run: ./gradlew build --scan
     - name: End
       run: |
-            ls -l
+             zip -r o.zip *
+             ls -l
+            
             
     - name: Upload result for job
       uses: actions/upload-artifact@v1
       with:
 
           name: Build
-
-          path: build
+        
+          path: o.zip
         #By:FlyKO
